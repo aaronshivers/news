@@ -1,0 +1,21 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "news.js",
+  "scripts": {
+    "start": "node news.js",
+    "test": "mocha tests/**.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronshivers/news.git"
+  },
+  "author": "aaron shivers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronshivers/news/issues"
+  },
+  "homepage": "https://github.com/aaronshivers/news#readme"
+}
