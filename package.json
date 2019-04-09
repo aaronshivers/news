@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/aaronshivers/news#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "dotenv": "^7.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "helmet": "^3.16.0",
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
