@@ -7,12 +7,16 @@ const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${ API_KEY }
 
 
 // GET /
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
 
   try {
 
-    // render home
-    res.send(url)
+    // get news feed
+    const response = await fetch(url)
+    const data = await response.json()
+
+    // render index page
+    res.render(`index`, { data })
 
   } catch (error) {
 
