@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/aaronshivers/news/issues"
   },
-  "homepage": "https://github.com/aaronshivers/news#readme"
+  "homepage": "https://github.com/aaronshivers/news#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "expect": "^24.7.1",
+    "mocha": "^6.1.2",
+    "supertest": "^4.0.2"
+  }
 }
