@@ -1,5 +1,20 @@
 <% include partials/top %>
 
-<h1>Hello</h1>
+<div class="container">
+  
+  <h1>Top Stories</h1>
+
+  <button class="btn btn-primary btn-lg">Hello</button>
+
+  <% articles.forEach(article => { %>
+
+    <h2><%= article.title %></h2>
+    <h3><%= article.source.name %></h3>
+    <p><%= article.source.id %></p>
+    <p><%= article.content %></p>
+
+  <% }) %>
+
+</div>
 
 <% include partials/bottom %>

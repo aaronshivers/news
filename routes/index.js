@@ -14,9 +14,11 @@ router.get('/', async (req, res) => {
     // get news feed
     const response = await fetch(url)
     const data = await response.json()
+    const articles = data.articles
+    console.log(articles[0])
 
     // render index page
-    res.render(`index`, { data })
+    res.render('index', { articles })
 
   } catch (error) {
 
