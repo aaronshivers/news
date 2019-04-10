@@ -1,0 +1,18 @@
+{
+  "short_name": "News",
+  "name": "News App",
+  "icons": [
+    {
+      "src": "/img/android-chrome-192x192.png",
+      "sizes": "192x192","type": "image/png"
+    }, {
+      "src": "/img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": ".",
+  "background_color": "#325D88",
+  "display": "standalone",
+  "theme_color": "#325D88"
+}
