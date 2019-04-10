@@ -6,7 +6,7 @@ const STATIC_FILES = [
   `/js/bootstrap.min.js`,
   `/js/jquery.min.js`,
   `/js/popper.min.js`,
-  `/bootstrap.min.css`
+  `/css/bootstrap.min.css`
 ]
 
 self.addEventListener('install', async event => {
