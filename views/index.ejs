@@ -2,16 +2,25 @@
 
 <div class="container">
   
-  <h1>Top Stories</h1>
-
-  <button class="btn btn-primary btn-lg">Hello</button>
+  <h1 class="text-center">Top Stories</h1>
 
   <% articles.forEach(article => { %>
 
-    <h2><%= article.title %></h2>
-    <h3><%= article.source.name %></h3>
-    <p><%= article.source.id %></p>
-    <p><%= article.content %></p>
+    <div id="card">
+      
+      <div class="card-body">
+        
+        <img src="<%= article.urlToImage %>" class="card-img-top mb-3">
+        <h5><%= article.title %></h5>
+        <p><%= article.content %></p>
+        <div class="row">
+          <a class="col" href="<%= article.url %>">Read More...</a>
+          <a class="col text-right" href="<%= article.url %>"><%= article.source.name %></a>
+        </div>
+
+      </div>
+
+    </div>    
 
   <% }) %>
 
